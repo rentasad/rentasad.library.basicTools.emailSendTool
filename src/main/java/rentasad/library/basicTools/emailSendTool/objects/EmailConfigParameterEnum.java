@@ -1,4 +1,4 @@
-package org.gustini.library.basicTools.emailSendTool.objects;
+package rentasad.library.basicTools.emailSendTool.objects;
 
 public enum EmailConfigParameterEnum
 {

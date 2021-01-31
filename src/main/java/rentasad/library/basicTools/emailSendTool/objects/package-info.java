@@ -13,4 +13,4 @@
  *         Description:
  *
  */
-package org.gustini.library.basicTools.emailSendTool.objects;
+package rentasad.library.basicTools.emailSendTool.objects;

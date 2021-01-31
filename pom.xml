@@ -4,12 +4,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>Gustini</groupId>
-		<artifactId>gustini.library</artifactId>
-		<version>latest</version>
-	</parent>
-	<artifactId>gustini.library.basicTools.emailSendTool</artifactId>
+	<artifactId>rentasad.library.basicTools.emailSendTool</artifactId>
 	<name>gustini.library.basicTools.emailSendTool</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -42,16 +37,6 @@
 			<artifactId>ini4j</artifactId>
 			<version>0.5.4</version>
 		</dependency>
-		<dependency>
-			<groupId>Gustini</groupId>
-			<artifactId>gustini.library.basicTools</artifactId>
-			<version>latest</version>
-		</dependency>
-		<dependency>
-			<groupId>Gustini</groupId>
-			<artifactId>gustini.library.configFileTool</artifactId>
-			<version>latest</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -65,5 +50,23 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.7</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>rentasad</groupId>
+			<artifactId>rentasad.library.basicTools</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>rentasad</groupId>
+			<artifactId>rentasad.library.configFileTool</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
+	<groupId>rentasad</groupId>
+	<version>1.0.0</version>
 </project>

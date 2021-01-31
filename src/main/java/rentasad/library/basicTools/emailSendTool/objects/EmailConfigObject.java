@@ -1,4 +1,4 @@
-package org.gustini.library.basicTools.emailSendTool.objects;
+package rentasad.library.basicTools.emailSendTool.objects;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,11 +6,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.gustini.library.configFileTool.ConfigFileTool;
-import org.gustini.library.configFileTool.ConfigFileToolException;
-import org.gustini.library.tools.exceptions.UnknownTableEnumException;
 import org.ini4j.ConfigParser.ConfigParserException;
 import org.ini4j.InvalidFileFormatException;
+
+import rentasad.library.configFileTool.ConfigFileTool;
+import rentasad.library.configFileTool.ConfigFileToolException;
+import rentasad.library.tools.exceptions.UnknownTableEnumException;
 
 /**
  *
@@ -83,6 +84,7 @@ public class EmailConfigObject
         Map<String, String> configMap = ConfigFileTool.readConfiguration(fileName.getAbsolutePath(), sectionName);
         for (EmailConfigParameterEnum enumItem : EmailConfigParameterEnum.values())
         {
+        	
             if (configMap.containsKey(enumItem.name()))
             {
                 emailConfigObject.setValue(configMap.get(enumItem.name()), enumItem);
