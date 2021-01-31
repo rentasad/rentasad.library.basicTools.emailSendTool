@@ -53,6 +53,20 @@ public class EmailConfigObject
         this.username = username;
         this.password = password;
     }
+    
+    /**
+    *
+    * @param mailserver
+    */
+   public EmailConfigObject(
+                            String mailserver
+                           )
+   {
+       super();
+       this.mailserver = mailserver;
+       this.username = null;
+       this.password = null;
+   }
 
     /**
      *
@@ -156,7 +170,7 @@ public class EmailConfigObject
                 this.username = propertyValue;
                 break;
             case port:
-                this.port = new Integer(propertyValue);
+                this.port = Integer.valueOf(propertyValue);
                 break;
             default:
                 System.err.println("Unbekanntes Enum: " + enumItem.name());
