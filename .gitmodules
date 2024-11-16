@@ -1,6 +1,6 @@
-[submodule "lib/rentasad_library_basicTools"]
-	path = lib/rentasad_library_basicTools
-	url = https://github.com/rentasad/library_basicTools.git
-[submodule "lib/rentasad_library_configFileTool"]
-	path = lib/rentasad_library_configFileTool
-	url = https://github.com/rentasad/library_configFileTool.git
+[submodule "submodules/rentasad.library.basicTools.stringTools"]
+	path = submodules/rentasad.library.basicTools.stringTools
+	url = git@github.com:rentasad/rentasad.library.basicTools.stringTools.git
+[submodule "submodules/rentasad.library.basicTools.configFileTool"]
+	path = submodules/rentasad.library.basicTools.configFileTool
+	url = https://github.com/rentasad/rentasad.library.basicTools.configFileTool
