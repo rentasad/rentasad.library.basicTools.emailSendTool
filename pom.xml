@@ -84,15 +84,12 @@
 	</dependencies>
 
 	<build>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
-				defaults (may be moved to parent pom) -->
+		<pluginManagement>
 			<plugins>
-				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>${maven-clean-plugin}</version>
 				</plugin>
-				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>${maven-resources-plugin}</version>
@@ -100,22 +97,19 @@
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven-compiler-plugin}</version>
+					<configuration>
+						<source>${project.java.version}</source>
+						<target>${project.java.version}</target>
+						<compileSourceRoots>
+							<compileSourceRoot>${project.basedir}/submodules/rentasad.library.basicTools.configFileTool/src/main/java</compileSourceRoot>
+							<compileSourceRoot>${project.basedir}/submodules/rentasad.library.basicTools.stringTools/src/main/java</compileSourceRoot>
+						</compileSourceRoots>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>${maven-surefire-plugin}</version>
-					<configuration>
-<!--						<source>17</source>-->
-<!--						<target>17</target>-->
-						<additionalSourceDirectories>
-							<additionalSourceDirectory>submodules/rentasad.library.basicTools.configFileTool/src/main/java</additionalSourceDirectory>
-							<additionalSourceDirectory>submodules/rentasad.library.basicTools.stringTools/src/main/java</additionalSourceDirectory>
-						</additionalSourceDirectories>
-					</configuration>
-
-
-
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
