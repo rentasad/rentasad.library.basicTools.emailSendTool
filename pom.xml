@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>rentasad.library.basicTools.emailSendTool</artifactId>
 	<groupId>rentasad.library</groupId>
-	<version>3.0.0</version>
+	<version>3.0.3</version>
 	<url>https://github.com/rentasad/rentasad.library.basicTools.emailSendTool</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.12.0</version>
+			<version>3.19.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.mail</groupId>
@@ -60,7 +60,19 @@
 		******************************************
 		*    Dependencies for Submodules         *
 		******************************************
+        -->
+        <dependency>
+            <groupId>rentasad.library</groupId>
+            <artifactId>rentasad.library.basicTools.stringTools</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>rentasad.library</groupId>
+            <artifactId>rentasad.library.basicTools.configFileTool</artifactId>
+            <version>B2.6.2</version>
+        </dependency>
 
+        <!--
 		******************************************
 		*    Submodule ConfigFileTool            *
 		******************************************
@@ -101,10 +113,10 @@
 					<configuration>
 						<source>${project.java.version}</source>
 						<target>${project.java.version}</target>
-						<compileSourceRoots>
-							<compileSourceRoot>${project.basedir}/submodules/rentasad.library.basicTools.configFileTool/src/main/java</compileSourceRoot>
-							<compileSourceRoot>${project.basedir}/submodules/rentasad.library.basicTools.stringTools/src/main/java</compileSourceRoot>
-						</compileSourceRoots>
+<!--						<compileSourceRoots>-->
+<!--							<compileSourceRoot>${project.basedir}/submodules/rentasad.library.basicTools.configFileTool/src/main/java</compileSourceRoot>-->
+<!--							<compileSourceRoot>${project.basedir}/submodules/rentasad.library.basicTools.stringTools/src/main/java</compileSourceRoot>-->
+<!--						</compileSourceRoots>-->
 					</configuration>
 				</plugin>
 				<plugin>

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lib/rentasad_library_basicTools" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lib/rentasad_library_configFileTool" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/submodules/rentasad.library.basicTools.configFileTool" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/submodules/rentasad.library.basicTools.stringTools" vcs="Git" />
   </component>
