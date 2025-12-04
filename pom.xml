@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>rentasad.library.basicTools.emailSendTool</artifactId>
 	<groupId>rentasad.library</groupId>
-	<version>3.0.3</version>
+	<version>3.0.4</version>
 	<url>https://github.com/rentasad/rentasad.library.basicTools.emailSendTool</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -66,11 +66,6 @@
             <artifactId>rentasad.library.basicTools.stringTools</artifactId>
             <version>3.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>rentasad.library</groupId>
-            <artifactId>rentasad.library.basicTools.configFileTool</artifactId>
-            <version>B2.6.2</version>
-        </dependency>
 
         <!--
 		******************************************
@@ -79,11 +74,11 @@
 		-->
 		<!-- https://mvnrepository.com/artifact/org.ini4j/ini4j HANDLING INI-FILE
     READ- AND WRITE -->
-		<dependency>
-			<groupId>org.ini4j</groupId>
-			<artifactId>ini4j</artifactId>
-			<version>0.5.4</version>
-		</dependency>
+        <dependency>
+            <groupId>rentasad.library</groupId>
+            <artifactId>rentasad.library.basicTools.configFileTool</artifactId>
+            <version>3.0.0</version>
+        </dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
